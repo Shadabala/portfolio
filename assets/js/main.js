@@ -368,7 +368,8 @@
         if (valid) {
             $.ajax({
                 type: "POST",
-                url: "assets/php/mail.php",
+                url: frm.attr("action"),
+                // url: "assets/php/mail.php",
                 data: frm.serialize(),
                 beforeSend: function () {
                     $(".loading").show();
