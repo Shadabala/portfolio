@@ -37,7 +37,7 @@
      ----------------------------------*/
     function skill_html() {
         $('#html').LineProgressbar({
-            percentage: 95,
+            percentage: 80,
             radius: '3px',
             height: '10px',
             duration: 6000,
@@ -48,7 +48,7 @@
 
     function skill_css() {
         $('#css').LineProgressbar({
-            percentage: 90,
+            percentage: 70,
             radius: '3px',
             height: '10px',
             duration: 6000,
@@ -59,7 +59,7 @@
 
     function skill_javaScript() {
         $('#javascript').LineProgressbar({
-            percentage: 65,
+            percentage: 70,
             radius: '3px',
             height: '10px',
             duration: 6000,
@@ -70,7 +70,7 @@
 
     function skill_jquery() {
         $('#jquery').LineProgressbar({
-            percentage: 75,
+            percentage: 70,
             radius: '3px',
             height: '10px',
             duration: 6000,
@@ -79,16 +79,16 @@
     }
     skill_jquery();
 
-    function skill_wordpress() {
-        $('#wordpress').LineProgressbar({
-            percentage: 95,
+    function skill_bootstrap() {
+        $('#bootstrap').LineProgressbar({
+            percentage: 70,
             radius: '3px',
             height: '10px',
             duration: 6000,
             backgroundColor: '#ddd'
         });
     }
-    skill_wordpress();
+    skill_bootstrap();
 
     function skill_web_design() {
         $('#web-design').LineProgressbar({
@@ -103,7 +103,7 @@
 
     function skill_php() {
         $('#php').LineProgressbar({
-            percentage: 90,
+            percentage: 85,
             radius: '3px',
             height: '10px',
             duration: 6000,
@@ -111,6 +111,26 @@
         });
     }
     skill_php();
+    function skill_laravel() {
+        $('#laravel').LineProgressbar({
+            percentage: 85,
+            radius: '3px',
+            height: '10px',
+            duration: 6000,
+            backgroundColor: '#ddd'
+        });
+    }
+    skill_laravel();
+    function skill_git() {
+        $('#git').LineProgressbar({
+            percentage: 85,
+            radius: '3px',
+            height: '10px',
+            duration: 6000,
+            backgroundColor: '#ddd'
+        });
+    }
+    skill_git();
 
     function skill_web_development() {
         $('#web-development').LineProgressbar({
@@ -126,7 +146,7 @@
     skill_reactjs();
     function skill_reactjs() {
         $('#reactjs').LineProgressbar({
-            percentage: 70,
+            percentage: 60,
             radius: '3px',
             height: '10px',
             duration: 6000,
@@ -138,7 +158,7 @@
     skill_responsivedesign();
     function skill_responsivedesign() {
         $('#responsivedesign').LineProgressbar({
-            percentage: 90,
+            percentage: 70,
             radius: '3px',
             height: '10px',
             duration: 6000,
