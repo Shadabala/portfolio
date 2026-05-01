@@ -105,7 +105,7 @@ p:last-child { margin-bottom:0; }
 .banner-section { position:relative; background-color:#d7d7d7; min-height:100vh; padding:60px 0; }
 .banner-section .banner-inner { position:relative; z-index:99; }
 .banner-section .banner-text h2 { color:#ffffff; font-size:18px; letter-spacing:0.9px; font-weight:400; text-transform:uppercase; margin:0 0 15px; }
-.banner-section .banner-text h3 { color:#ffffff; font-size:42px; font-weight:400; letter-spacing:1px; margin:0 0 15px; }
+.banner-section .banner-text h3 { color:#ffffff; font-size:32px; font-weight:400; letter-spacing:1px; margin:0 0 15px; }
 .banner-section .banner-text p { color:#ffffff; max-width:510px; letter-spacing:0.2px; margin:0 0 15px; }
 .banner-section .social-links a { color:#ffffff; font-size:20px; margin:0 20px 20px 0; }
 .hero-highlights { display:flex; flex-wrap:wrap; gap:10px; margin:0 0 20px; }
