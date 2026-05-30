@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -201,9 +201,18 @@
                                 </p>
 
                                 <ul class="hero-highlights">
-                                    <li><strong>13+</strong><span>Delivered projects</span></li>
-                                    <li><strong>3+</strong><span>Years experience</span></li>
-                                    <li><strong>Laravel</strong><span>Backend specialist</span></li>
+                                    <li>
+                                        <strong class="counter" data-count="13" data-suffix="+">0</strong>
+                                        <span>Delivered projects</span>
+                                    </li>
+                                    <li>
+                                        <strong class="counter" data-count="3" data-suffix="+">0</strong>
+                                        <span>Years experience</span>
+                                    </li>
+                                    <li>
+                                        <strong>Laravel</strong>
+                                        <span>Backend specialist</span>
+                                    </li>
                                 </ul>
                             
                                 <div class="social-links d-flex flex-wrap">
@@ -988,5 +997,47 @@
         <script src="assets/js/switcher.js"></script>
 
     </body>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const counters = document.querySelectorAll(".counter");
+        
+        const observerOptions = {
+            root: null,
+            threshold: 0.1
+        };
+        
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const counter = entry.target;
+                    const target = counter.dataset.count ? parseInt(counter.dataset.count) : parseInt(counter.textContent);
+                    if (isNaN(target)) return;
+                    
+                    const suffix = counter.dataset.suffix || "";
+                    let count = 0;
+                    const duration = 1500; // Animation duration in ms
+                    const stepTime = 30; // Update interval in ms
+                    const increment = target / (duration / stepTime);
+                    
+                    const timer = setInterval(() => {
+                        count += increment;
+                        if (count >= target) {
+                            counter.textContent = target + suffix;
+                            clearInterval(timer);
+                        } else {
+                            counter.textContent = Math.ceil(count) + suffix;
+                        }
+                    }, stepTime);
+                    
+                    // Unobserve to run animation only once
+                    observer.unobserve(counter);
+                }
+            });
+        }, observerOptions);
+        
+        counters.forEach(counter => observer.observe(counter));
+    });
+</script>
 
 </html>

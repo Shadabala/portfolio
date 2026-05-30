@@ -6,7 +6,7 @@
     /*--------------------------------
      01. One Page Scrollspy
      ----------------------------------*/
-    $('body').scrollspy({target: '#navigation'});
+    $('body').scrollspy({ target: '#navigation' });
     function scrollToSection(event) {
         event.preventDefault();
         var $section = $($(this).attr('href'));
@@ -170,10 +170,10 @@
     /*--------------------------------
      04. jQuery counterUp
      ----------------------------------*/
-    function counter_number() {
-        $('.counter').countUp();
-    }
-    counter_number();
+    // function counter_number() {
+    //     $('.counter').countUp();
+    // }
+    // counter_number();
 
     /*--------------------------------
      05. Porfolio Isotope Filter
@@ -278,7 +278,7 @@
     });
     function mobileMenuHide() {
         var windowWidth = $(window).width(),
-                siteHeader = $('.site-header');
+            siteHeader = $('.site-header');
         if (windowWidth < 992) {
             siteHeader.addClass('mobile-menu-hide');
             $('.menu-toggle').removeClass('open');
